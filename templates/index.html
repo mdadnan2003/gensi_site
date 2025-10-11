@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Mono+One&family=Share+Tech&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+    <title>Gensi-Digital Marketing Agency</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="#">
+            <img src="{{ url_for('static', filename='assets/logo.png') }}" alt="logo" />
+          </a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-3-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contacts</a></li>
+        <li>
+          <a href="https://wa.me/918651671911?text=Mujhe%20Gensi%20ke%20bare%20me%20info%20chahiye!!" class="btn">
+            Let's Connect
+            <span><i class="ri-arrow-right-long-line"></i></span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <header class="section__container header__container" id="home">
+      <div class="header__image">
+        <img src="{{ url_for('static', filename='assets/header.png') }}" alt="header" />
+      </div>
+      <div class="header__content">
+        <img src="{{ url_for('static', filename='assets/plane.png') }}" alt="plane" />
+        <h1>Explore The World With Gensi In Digital</h1>
+        <p class="section__description">
+          Discover powerful brands and create unforgettable digital stories with Gensi.
+          From stunning designs to impactful marketing campaigns, your brand’s next big leap starts here.
+          Let’s make your business vision a reality — powered by IITians, driven by creativity!
+        </p>
+      </div>
+    </header>
+
+    <section class="about" id="about">
+      <div class="section__container about__container">
+        <div class="about__image">
+          <img src="{{ url_for('static', filename='assets/about.jpg') }}" alt="about" />
+        </div>
+        <div class="about__content">
+          <h2 class="section__header">
+            It’s Time to <span>Shine Online!</span> Don’t Wait Any Longer — Let Gensi Take Your Brand Higher.
+          </h2>
+          <p class="section__description">
+            Our goal is to make your digital aspirations come true, whether you're a firm seeking new opportunities, a local business looking to expand, or a creator creating your own brand!
+          </p>
+          <div class="about__signature">Gensi</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container tour__container" id="services">
+      <h3 class="section__subheader">Our Services</h3>
+      <h2 class="section__header">Your Growth Partner in Digital World.</h2>
+      <div class="tour__grid">
+        <div class="tour__card">
+          <img src="{{ url_for('static', filename='assets/tour-1.jpg') }}" alt="tour" />
+          <h4>Business Promotions</h4>
+          <p>Gensi offers effective business promotion services that will increase brand awareness and draw in actual clients.</p>
+        </div>
+        <div class="tour__card">
+          <img src="{{ url_for('static', filename='assets/tour-2.jpeg') }}" alt="tour" />
+          <h4>Social Marketing</h4>
+          <p>Use Gensi's skilled social marketing solutions to interact with your audience and expand your brand online.</p>
+        </div>
+        <div class="tour__card">
+          <img src="{{ url_for('static', filename='assets/tour-3.jpeg') }}" alt="tour" />
+          <h4>Visual Branding</h4>
+          <p>With Gensi's skilled visual branding solutions, you can engage your audience and establish a memorable brand identity.</p>
+        </div>
+        <div class="tour__card">
+          <img src="{{ url_for('static', filename='assets/tour-4.jpeg') }}" alt="tour" />
+          <h4>Ads Marketing</h4>
+          <p>Utilize Gensi's result-driven advertising marketing solutions to increase revenue and drive targeted traffic.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="destination">
+      <div class="section__container destination__container">
+        <h3 class="section__subheader">Our Service Bundles</h3>
+        <h2 class="section__header">The go-to option for local businesses looking to increase sales, leads, and visibility</h2>
+        <div class="destination__grid">
+          <div class="destination__card">
+            <img src="{{ url_for('static', filename='assets/destination-1.jpg') }}" alt="destination" />
+            <div class="destination__card__content">
+              <h4>Starter Package</h4>
+              <h5>GMB Setup/Update,1 Creative per Week,1 video reel/month,Basic Page Handling (Facebook/Instagram)</h5>
+              <div class="destination__card__footer">
+                <h6><span style="text-decoration: line-through; color: #aaa;">₹5000</span> <span style="color: #00bcd4; font-weight: bold;">₹999/month</span></h6>
+              </div>
+            </div>
+          </div>
+          <div class="destination__card">
+            <img src="{{ url_for('static', filename='assets/destination-2.jpg') }}" alt="destination" />
+            <div class="destination__card__content">
+              <h4>Growth Package</h4>
+              <h5>GMB + Social Media setup, 2 creatives per week,1 video reel/month, WhatsApp poster + 1 monthly report</h5>
+              <div class="destination__card__footer">
+                <h6><span style="text-decoration: line-through; color: #aaa;">₹12000</span> <span style="color: #00bcd4; font-weight: bold;">₹1999/month</span></h6>
+              </div>
+            </div>
+          </div>
+          <div class="destination__card">
+            <img src="{{ url_for('static', filename='assets/destination-3.jpg') }}" alt="destination" />
+            <div class="destination__card__content">
+              <h4>Premium Package</h4>
+              <h5>GMB + Social Media full setup, 4 creatives per week, WhatsApp marketing support, 2 video reel/month, Priority support</h5>
+              <div class="destination__card__footer">
+                <h6><span style="text-decoration: line-through; color: #aaa;">₹20000</span> <span style="color: #00bcd4; font-weight: bold;">₹2999/month</span></h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container review__container">
+      <div class="review__image">
+        <img src="{{ url_for('static', filename='assets/review.png') }}" alt="review" />
+      </div>
+      <div class="review__content">
+        <h3 class="section__subheader">Top Reviews</h3>
+        <h2 class="section__header">Our Valuable Clients Say About Us</h2>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="review__card">
+                <span><i class="ri-double-quotes-l"></i></span>
+                <p class="section__description">
+                  Gensi improved the internet visibility of our neighborhood store so well that foot traffic and customer traffic rose dramatically. Their creative and marketing strategy is realistic and effective!
+                </p>
+                <h4>Sahana</h4>
+                <h5>Music Studio</h5>
+                <div>
+                  <span><i class="ri-star-fill"></i></span><span><i class="ri-star-fill"></i></span><span><i class="ri-star-fill"></i></span><span><i class="ri-star-fill"></i></span><span><i class="ri-star-fill"></i></span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="review__card">
+                <span><i class="ri-double-quotes-l"></i></span>
+                <p class="section__description">
+                  Our weekend appointments were doubled because to Gensi's setup of the Instagram clips and WhatsApp booking system. Their strategy is astute and realistic!
+                </p>
+                <h4>Kanishk</h4>
+                <h5>Salon</h5>
+                <div>
+                  <span><i class="ri-star-fill"></i></span><span><i class="ri-star-fill"></i></span><span><i class="ri-star-fill"></i></span><span><i class="ri-star-fill"></i></span><span><i class="ri-star-fill"></i></span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="review__card">
+                <span><i class="ri-double-quotes-l"></i></span>
+                <p class="section__description">
+                  Our store visibility improved substantially after working with Gensi. The local SEO and Google Business optimization resulted in more customers than we expected!
+                </p>
+                <h4>Kundan</h4>
+                <h5>Retail Owner</h5>
+                <div>
+                  <span><i class="ri-star-fill"></i></span><span><i class="ri-star-fill"></i></span><span><i class="ri-star-fill"></i></span><span><i class="ri-star-fill"></i></span><span><i class="ri-star-fill"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <section class="blog">
+      <div class="section__container blog__container">
+        <h3 class="section__subheader">Latest New Services</h3>
+        <h2 class="section__header">Our Latest New Services</h2>
+        <div class="blog__grid">
+          <div class="blog__card">
+            <img src="{{ url_for('static', filename='assets/blog-1.jpg') }}" alt="blog" />
+            <div class="blog__content">
+              <h4>Website & Tech</h4>
+              <p>Invest in a polished, user-friendly website that draws clients and accelerates the expansion of your business.</p>
+            </div>
+          </div>
+          <div class="blog__card">
+            <img src="{{ url_for('static', filename='assets/blog-2.jpg') }}" alt="blog" />
+            <div class="blog__content">
+              <h4>Content Production</h4>
+              <p>Superior content that draws in customers and encourages interaction for your company.</p>
+            </div>
+          </div>
+          <div class="blog__card">
+            <img src="{{ url_for('static', filename='assets/blog-3.jpg') }}" alt="blog" />
+            <div class="blog__content">
+              <h4>Premium Branding</h4>
+              <p>Gensi manages pitch decks, marketing calendars, YouTube management, and brand planning to help you expand your business with ease.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="banner">
+      <div class="banner__wrapper">
+        {% for i in range(1,9) %}
+          <img src="{{ url_for('static', filename='assets/banner-' ~ i ~ '.jpg') }}" alt="banner" />
+        {% endfor %}
+      </div>
+    </section>
+
+    <footer id="contact">
+      <div class="section__container footer__container">
+        <div class="footer__logo">
+          <img src="{{ url_for('static', filename='assets/logo.png') }}" alt="logo" />
+        </div>
+        <ul class="footer__links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="https://wa.me/918651671911?text=Mujhe%20Gensi%20ke%20bare%20me%20info%20chahiye!!">Contacts</a></li>
+        </ul>
+        <ul class="footer__socials">
+          <li><a href="https://www.facebook.com/share/14MdG4RYdmU/"><i class="ri-facebook-fill"></i></a></li>
+          <li><a href="https://wa.me/918651671911?text=Mujhe%20Gensi%20ke%20bare%20me%20info%20chahiye!!"><i class="ri-whatsapp-fill"></i></a></li>
+          <li><a href="https://www.instagram.com/gensi.india?igsh=ZzExemR4NXZ1cDli"><i class="ri-instagram-line"></i></a></li>
+          <li><a href="https://www.linkedin.com/company/gensi-india/"><i class="ri-linkedin-fill"></i></a></li>
+        </ul>
+      </div>
+      <div class="footer__bar">Copyright © 2025 Gensi. All rights reserved.</div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+  </body>
+</html>
