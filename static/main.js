@@ -47,8 +47,8 @@ ScrollReveal().reveal(".about__signature", {
   delay: 1000,
 });
 
-ScrollReveal().reveal(".tour__card", { ...scrollRevealOption, interval: 200 });
-ScrollReveal().reveal(".destination__card", {
+ScrollReveal().reveal(".service__card", { ...scrollRevealOption, interval: 200 });
+ScrollReveal().reveal(".bundle__card", {
   ...scrollRevealOption,
   interval: 200,
 });
