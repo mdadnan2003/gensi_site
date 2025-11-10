@@ -629,7 +629,7 @@ nav {
   .header__content form {
     flex-direction: row;
   }
-
+ 
   .service__grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -788,8 +788,11 @@ nav {
     line-height: 2.5rem;
   }
   .header__content h2 {
-    font-size: 1.8rem;
-    line-height: 2.5rem;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    /* display: grid; */
+    /* gap: 2rem; */
+    /* scroll-behavior: smooth; */
   }
 
   .header__content form {
