@@ -181,6 +181,15 @@ nav {
   text-align: center;
   font-family:"Rubik Mono One", monospace;;
 }
+.header__content h2 {
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  text-align: center;
+  font-family:"Rubik Mono One", monospace;;
+}
 
 .header__content form {
   margin-top: 2rem;
